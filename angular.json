@@ -24,9 +24,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-                "src/polyfills.ts"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -61,5 +59,8 @@
       }
     }
   },
-  "defaultProject": "client"
+  "defaultProject": "client",
+  "cli": {
+    "analytics": "b1f6519c-5439-4347-a346-97eef4dcc7f4"
+  }
 }
