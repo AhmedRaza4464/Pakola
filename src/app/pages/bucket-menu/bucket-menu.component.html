@@ -1,0 +1,59 @@
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title drawer__title">Your cart</h5>
+      <button type="button" class="btn-close" (click)="closeDrawer()" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Cart items and content here -->
+      <div class="scrollable-content">
+        <div *ngFor="let product of products" class="row mb-3">
+          <div class="col-3">
+            <img [src]="product.imgSrc" alt="">
+          </div>
+          <div class="col">
+            <h6 class="text-secondary">{{ product.title }} <i class="fa-solid fa-trash ms-1"></i></h6>
+            <div class="row mt-1">
+              <span class="case">{{ product.case }}</span>
+            </div>
+            <div class="row mt-1">
+              <span class="fw-300">{{ product.price }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-5"></div>
+      <div class="text-center align-items-center justify-content-center0 position-relative">
+        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="8rem" fill="var(--background-color)" viewBox="0 0 227.52 308.16">
+        </svg>
+        <p class="mb-0 fw-bold" style="color: var(--background-color);">Your cart is empty</p>
+        <p class="mb-0">Add items to get started</p>
+      </div>
+    </div>
+    <div class="footer border-top">
+      <div class="row">
+        <div class="col">
+          <div class="row mt-2">
+            <div class="col ms-2">
+              <span class="subtotal">Subtotal</span>
+            </div>
+            <div class="col offset-4">
+              <span class="price">Rs.10,488.00</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-2 mt-2">
+              <p class="footerpara">
+                Taxes and shipping calculated at checkout
+              </p>
+            </div>
+          </div>
+          <div class="footer-buttons d-flex justify-content-between">
+            <button (click)="RenderToViewPage()" class="btn cart-modal__btn cart-modal__btn--viewcart" type="button">
+              View Cart
+            </button>
+            <button (click)="RenderToCheckout()"     class="btn cart-modal__btn cart-modal__btn--checkout" type="button" >
+              Check out
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>

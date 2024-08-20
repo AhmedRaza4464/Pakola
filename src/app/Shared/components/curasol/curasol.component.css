@@ -1,0 +1,23 @@
+.qadir-section{
+  overflow-x: hidden;
+}
+.carousel-indicators {
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-indicators button {
+  background-color: #ffffff;
+}
+
+.carousel-indicators .active {
+  background-color: #fcc817;
+}

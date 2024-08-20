@@ -1,0 +1,110 @@
+
+.shop-section{
+  overflow-x: hidden;
+}
+.shop-section .container-fluid {
+position: relative;
+margin: 0px;
+padding: 0px;
+}
+
+.shop-section img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; 
+  display: block; 
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.row{
+  font-size: 18px;
+  padding-left: 30px;
+
+}
+
+.bargar:hover{
+  transform: scale(0.5, 0.5);
+  box-decoration-break: 5px 5px 30px 15px,
+
+}
+
+.para{
+  color: black;
+  margin-left: 130px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+img{
+  height: 350px;
+  width: 500px;
+}
+.card-text{
+  font-size: 15px;
+  margin-top: 80px;
+  color: black;
+}
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+
+}
+.card .card_title {
+
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+.card:hover {
+  transform: scale(0.9, 0.9);
+
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+
+    flex-direction: column;
+  }
+
+}
+
+
+
+.shop-section {
+  position: relative;
+}
+
+.shop-section .container-fluid {
+  padding: 0;
+}
+
+.shop-section img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.shop {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.saif-section{
+  overflow: hidden;
+}

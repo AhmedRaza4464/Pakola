@@ -1,0 +1,164 @@
+<!-- Offcanvas Trigger Button -->
+<button class="btn btn-primary d-sm-none" (click)="openOffcanvas()">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+<div class="container mt-5 mb-5 d-none d-sm-block"> <!-- This is the default filter section, hidden on small screens -->
+    <!-- Original Filter HTML Here -->
+    <div class="container mt-5 mb-5" >
+        <div class="card bader ">
+            <div class="card-body">
+                <!-- <h5 class="card-title">Filter</h5> -->
+                <div class="mb-3 mt-5">
+                    <h3 class="mb-4"><b>Categories</b></h3>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="carbonated">
+                        <label class="form-check-label" for="carbonated">Carbonated</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="cordial-syrups">
+                        <label class="form-check-label" for="cordial-syrups">Cordial Syrups</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="water">
+                        <label class="form-check-label" for="water">Water</label>
+                    </div>
+                </div>
+                <div class="mb-3 mt-5">
+                    <h3 class="mb-4"><b>Availability</b></h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="in-stock">
+                        <label class="form-check-label" for="in-stock">In stock <span class="muted">(39)</span></label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="out-of-stock">
+                        <label class="form-check-label" for="out-of-stock">Out of stock <span class="muted">(13)</span></label>
+                    </div>
+                </div>
+                <div class="mb-3 mt-5 ">
+                    <h3 class="mb-4"><b>Price</b></h3>
+                    <div class="d-flex justify-content-between">
+                        <span id="price-min-display">Rs0</span>
+                        <span id="price-max-display">Rs1080</span>
+                    </div>
+                    <input type="range" class="custom-range" id="price-min" min="0" max="1080" value="0">
+                    <input type="range" class="custom-range" id="price-max" min="0" max="1080" value="1080">
+                </div>
+                <button class="btn btn-success " id="filter-button">FILTER</button>
+            </div>
+    
+            <div class="container mt-5">
+                <div class="card1">
+                    <div class="card-body">
+                        <h3 class="card-title"><b>Brand</b></h3>
+                        <form>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="appleSidra">
+                                <label class="form-check-label" for="appleSidra">
+                                    Apple Sidra <span class="text-muted0">(10)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="pakola">
+                                <label class="form-check-label" for="pakola">
+                                    Pakola <span class="text-muted1">(34)</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="vimto">
+                                <label class="form-check-label" for="vimto">
+                                    Vimto <span class="text-muted2">(8)</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</div>
+
+<!-- Offcanvas Component -->
+<ng-template #offcanvas let-offcanvas="offcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Filters</h5>
+        <button type="button" class="btn-close text-reset" aria-label="Close" (click)="offcanvas.dismiss()"></button>
+    </div>
+    <div class="offcanvas-body overflow-x-hidden" >
+        <!-- Filter content inside the offcanvas -->
+        <div class="container">
+            <div class="card border-0">
+                <div class="card-body">
+                    <div class="mb-3 mt-2">
+                        <h3 class="mb-4"><b>Categories</b></h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="carbonated">
+                            <label class="form-check-label" for="carbonated">Carbonated</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="cordial-syrups">
+                            <label class="form-check-label" for="cordial-syrups">Cordial Syrups</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="water">
+                            <label class="form-check-label" for="water">Water</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-5">
+                        <h3 class="mb-4"><b>Availability</b></h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="in-stock">
+                            <label class="form-check-label" for="in-stock">In stock <span class="muted">(39)</span></label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="out-of-stock">
+                            <label class="form-check-label" for="out-of-stock">Out of stock <span class="muted">(13)</span></label>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-5">
+                        <h3 class="mb-4"><b>Price</b></h3>
+                        <div class="d-flex justify-content-between">
+                            <span id="price-min-display">Rs0</span>
+                            <span id="price-max-display">Rs1080</span>
+                        </div>
+                        <input type="range" class="custom-range" id="price-min" min="0" max="1080" value="0">
+                        <input type="range" class="custom-range" id="price-max" min="0" max="1080" value="1080">
+                    </div>
+                    <button class="btn btn-success " id="filter-button">FILTER</button>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="card1">
+                        <div class="card-body">
+                            <h3 class="card-title"><b>Brand</b></h3>
+                            <form>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="appleSidra">
+                                    <label class="form-check-label" for="appleSidra">
+                                        Apple Sidra <span class="text-muted0">(10)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="pakola">
+                                    <label class="form-check-label" for="pakola">
+                                        Pakola <span class="text-muted1">(34)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="vimto">
+                                    <label class="form-check-label" for="vimto">
+                                        Vimto <span class="text-muted2">(8)</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(20,36,60);" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/logo33.jpg"  alt="Logo" class="img-fluid">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+
+
+          <li class="nav-item" [class.active]="activeButton === 'recipes'" (click)="setActive('recipes')">
+            <a class="nav-link" routerLink="/Recipes">RECIPES</a>
+          </li>
+
+          <li class="nav-item" [class.active]="activeButton === 'subscribe'" (click)="setActive('subscribe')">
+          <a  routerLink="/Home/subs" class="nav-link" >SUBSCRIBE</a>
+
+          </li>
+
+
+        <li class="nav-item" [class.active]="activeButton === 'about-us'" (click)="setActive('about-us')">
+        <a class="nav-link" routerLink="/About-Us">ABOUT-US</a>
+        </li>
+
+
+          <li class="nav-item" [class.active]="activeButton === 'contact-us'" (click)="setActive('contact-us')">
+          <a class="nav-link" routerLink="/contact-us">CONTACT-US</a>
+          </li>
+
+        <li class="nav-item ms-4" [class.active]="activeButton === 'shop'" (click)="setActive('shop')">
+        <a class="nav-link shop" routerLink="/Shop">SHOP</a>
+        </li>
+
+      </ul>
+      <!-- <span   class="iconcart d-flex">
+        <i (click)="openDrawer()"class="fa-solid fa-cart-shopping" style="color:rgba(253,206,23,255)"></i>
+      </span> -->
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,109 @@
+<section class="over-section">
+    <section class="shop-section">
+        <div class="container-fluid position-relative">
+          <img src="/assets/burger1.jpg" alt="" class="w-100">
+          <div class="overlay-text">Subscribe</div>
+        </div>
+
+      </section>
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mt-5">
+        <div class="services-box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="/assets/bargar3.jpg" alt="Mission">
+                    <h4 class="card-title">Our Mission</h4>
+                    <p class="card-text">A burger is a so tasty food. I like it so much. burger has some good specialities and some bad. Good specialities are this that it contain salad like tomato,cucumber,onion etc. It is so big food that we are so hungry .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-4 mt-5 s">
+        <div class="services-box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="/assets/bargar2.jpg" alt="Vision">
+                    <h4 class="card-title">Our Vision</h4>
+                    <p class="card-text">A burger is a so tasty food. I like it so much. burger has some good specialities and some bad. Good specialities are this that it contain salad like tomato,cucumber,onion etc. It is so big food that we are so hungry .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-4 mt-5">
+        <div class="services-box">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img src="/assets/bargar5.jpg" alt="Values">
+                    <h4 class="card-title">Our Values</h4>
+                    <p class="card-text">A burger is a so tasty food. I like it so much. burger has some good specialities and some bad. Good specialities are this that it contain salad like tomato,cucumber,onion etc. It is so big food that we are so hungry .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container gap">
+  <div class="text-center">
+    <h2 class="section-title big-heading-blue">Subscribe Now</h2>
+  </div>
+  <form>
+      <div class="form-group">
+          <label for="firstName">First Name
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <input type="text" class="hs-input" id="firstName" required>
+      </div>
+      <div class="form-group">
+          <label for="lastName">Last Name
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <input type="text" class="hs-input" id="lastName" required>
+      </div>
+      <div class="form-group">
+          <label for="email">Email
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <input type="email" class="hs-input" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone-number">Phone Number <span style="color: red;">*</span></label>
+        <div class="phone-number-container">
+          <select id="countryCode" required>
+            <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+        </select>
+            <input type="text" id="phone-number" name="phone-number" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <div class="form-group">
+          <label for="company">Company Name
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <input type="text" class="hs-input" id="company" required>
+      </div>
+      <div class="form-group">
+          <label for="region">Region
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <select class="hs-input" id="region" required>
+              <option value="">Please Select</option>
+              <option value="Region1">Region 1</option>
+              <option value="Region2">Region 2</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="projectDetails">Project Details
+              <span class="fw-bold text-danger">*</span>
+          </label>
+          <textarea class="hs-inputarea" id="projectDetails" rows="4" required></textarea>
+      </div>
+      <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="contactForJob">
+          <label class="form-check-label" for="contactForJob">I am contacting Provider about internship or career opportunities</label>
+      </div>
+      <div class="form-group">
+          <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+      </div>
+    <div class="actions"><input type="submit" class="hs-button primary large" value="Submit"></div>
+  </form>
+</div>
+
+</section>

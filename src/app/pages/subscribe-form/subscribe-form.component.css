@@ -1,0 +1,254 @@
+
+.shop-section{
+    overflow-x: hidden;
+  }
+  .shop-section .container-fluid {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  }
+  
+  .shop-section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; 
+    display: block; 
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+.container {
+     background-color: rgb(248,172,4);
+   width: 100%;
+    max-width: 750px;
+    padding: 30px;
+}
+
+label {
+    font-size: 14px;
+    color: #33475b;
+    display: block;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 0;
+    margin-bottom: 4px;
+}
+
+.hs-input {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+    height: 40px;
+    padding: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #33475b;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.hs-inputarea {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+    color: #33475b;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+
+
+
+.big-heading-blue {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: var(--secondary-dark);
+    text-align: left;
+    letter-spacing: -.05em;
+    text-transform: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Inter, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.phone-number-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    /* Space between the dropdown and input */
+}
+
+.phone-number-container select,
+.phone-number-container input {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #33475b;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+
+}
+img{
+    height: 350px;
+    width: 500px;
+  }
+  .card-text{
+    font-size: 15px;
+    margin-top: 80px;
+    color: white;
+  }
+  .services-box {
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 300px;
+    height: 300px;
+
+  }
+  .card .card_title {
+    font-size: 30px;
+    margin-top: 100px;
+    height: 40px;
+  }
+  .card:hover {
+    transform: scale(0.9, 0.9);
+  }
+  .services-box1{
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+  }
+  .services-box2{
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .services-box3{
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+  }
+
+
+
+.phone-number-container select {
+    width: 180px;
+ }
+
+.phone-number-container input {
+    flex: 1;
+}
+
+
+.actions {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 17px 0px;
+}
+
+.hs-button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 12px;
+    position: relative;
+    text-align: center;
+    transition: all .15s linear;
+    background-color:  rgb(248,172,4);
+    border-color: #0C3A53;
+    color: #fff;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    padding: 12px 24px;
+    border-color: black;
+    color: #FFFFFF;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: rgba(82, 168, 236, .8);
+    outline: none;
+}
+
+.gap{
+    margin-top: 150px;
+}
+.card {
+    background-color: rgb(248,172,4);
+    color: white;
+    margin: 15px 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card img {
+    height: 50px;
+    width: 50px;
+    margin-top: 10%;
+}
+.card-title {
+    margin-top: 20px;
+}
+.card-text {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+@media (max-width: 768px) {
+    .card img {
+        margin-top: 5%;
+    }
+    .card-title {
+        margin-top: 10px;
+    }
+    .card-text {
+        margin-top: 10px;
+    }
+}
+
+.saifi{
+    height: 700px;
+    width: 100%;
+}

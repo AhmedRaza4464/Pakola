@@ -1,0 +1,66 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <div class="header-row">
+            <div class="header-col">
+              <span class="fw-bold">PRODUCT</span>
+            </div>
+            <div class="header-col">
+              <span class="fw-bold">PRODUCT</span>
+
+            </div>
+            <div class="header-col">
+              <span class="fw-bold">PRODUCT</span>
+
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="card-body">
+          <div class="container">
+            <div class="row product-container">
+              <div class="col-3 col-md-2 position-relative">
+                <button type="button" class="btn-close" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+
+                <img src="assets/cola.jpeg" alt="Product Image" class="img-fluid product-image">
+              </div>
+              
+              <div class="col-9 col-md-7 product-info">
+                <h5>Pakola</h5>
+                <p>Ice-cream Soda 1.5L - Case of 6</p>
+                <p><strong>Product:</strong> Case of 6</p>
+                <p><strong>Rs.969.00</strong></p>
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-outline-secondary" (click)="decrease()">-</button>
+                  <span style="width: 50px; text-align: center;">{{ quantity }}</span>
+                  <button class="btn btn-outline-secondary" (click)="increase()">+</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 product-total">
+                <p><strong>Rs.969.00</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="checkout-container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <p class="h5 mb-0">Subtotal:</p>
+          <p class="h4 mb-0"><strong>Rs.969.00</strong></p>
+        </div>
+        <p class="text-end mb-4">Taxes and shipping calculated at checkout</p>
+        <button  (click)="checkout()"   class="checkout-button">
+          CHECK OUT
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

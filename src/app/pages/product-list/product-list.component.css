@@ -1,0 +1,120 @@
+.card-image {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .hover-image {
+    opacity: 1;
+  }
+  
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .hover-image {
+    opacity: 1;
+  }
+  
+  /* .btn{
+    width: 200px;
+  } */
+  
+  .hover-text {
+    transition: color 0.3s ease;
+  }
+  
+  .hover-text:hover {
+    color:  rgba(253,206,23,255);
+  }
+  
+  .card {
+    position: relative;
+    word-wrap: break-word; /* Ensure long words wrap properly */
+    overflow: hidden;
+    height: 100%; /* Make sure the card takes the full height of its parent */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out elements evenly */
+  }
+  
+  .price{
+    text-align: center;
+
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card:hover .hover-image {
+    opacity: 1;
+  }
+  
+  .card:hover .main-image {
+    opacity: 0;
+  }
+  
+  .product-text {
+    white-space: normal; /* Ensure text wraps within the container */
+    word-wrap: break-word; /* Ensure long words wrap properly */
+  }
+
+
+  /*  */
+
+  .button {
+    display: flex;
+    justify-content: center;
+}
+
+.button .add-to-cart-button, .button .view-button {
+    margin: 0 2px;
+}
+
+
+.view-button{
+border-radius: 5px;
+background-color:  rgba(253,206,23,255);
+color: white;
+border: none;
+height: 45px;
+align-items: center;
+
+}
+
+.button{
+border-top: 1px solid rgb(200, 223, 196);
+height: 60px;
+align-items: center;
+padding: 10px;
+
+}
+.caart{
+  background-color:  rgba(253,206,23,255);
+  width: 200px;
+  border-radius: 5px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  border: none;
+}
+
+  /*  */
+  
+  

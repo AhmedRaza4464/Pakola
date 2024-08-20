@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-top: 1px solid #eeeaea;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-section.logo img {
+  max-width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 100px;
+
+}
+
+.footer-section p {
+  margin: 0 0 10px;
+}
+
+.connect p {
+  margin-bottom: 5px;
+}
+
+.connect a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.connect a:hover {
+  color: rgb(9, 180, 9);
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links ul li a:hover {
+  color: rgb(5, 188, 5);
+  transition: 0.2s ease;
+}
+
+.contact p {
+  font-size: 14px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #565454;
+  font-size: medium;
+  background-color: #d1cfcf;
+  height: 60px;
+}
+
+.footer-bottom .color {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .footer-section {
+      text-align: center;
+  }
+
+  .footer-section .connect a {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .footer-bottom {
+      font-size: small;
+  }
+}
+
+p{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-link-list {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+i{
+  margin-right: 8px;
+}
+
+ul{
+  font-size: 13px;
+  font-weight: 500;
+}
+.footer__content p span, .social-icons-container h5 {
+  font-weight: bold;
+  font-size: medium;
+}
+.footer__content p {
+  display: flex;
+  align-items: baseline;
+  font-weight: bold;
+  font-size: small;
+}
+
+.Saifi{
+  font-weight: bold;
+  font-size: medium;
+}
+
+.Saifi:hover{
+  color: rgba(253,206,23,255);
+}
+
+.foot-para{
+  font-weight: bold;
+  font-size: small;
+}

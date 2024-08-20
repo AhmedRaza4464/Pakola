@@ -1,0 +1,109 @@
+.offcanvas {
+    background-color: #FFFFFF;
+    padding-bottom: 80px; /* Adjust to match the footer height */
+  }
+  
+  .offcanvas-header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 15px;
+  
+  }
+
+  
+  .offcanvas-title {
+ 
+    padding: 5px 0;
+    margin: 0;
+    color: #484848;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  
+  .offcanvas-body {
+    max-height: calc(100vh - 200px); /* Adjust based on your offcanvas height and header/footer heights */
+    overflow-y: auto; /* Enable vertical scroll if content exceeds max-height */
+  }
+  
+  .scrollable-content {
+    padding-right: 15px; /* Adjust for scrollbar width */
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px 15px;
+    border-top: 1px solid #e5e5e5;
+  }
+  
+  .price {
+    color: #1cc95d;
+    font-weight: 500;
+    font-size: calc(var(--font-size-base) + 1px);
+  }
+  
+  .subtotal {
+    font-weight: 600;
+    font-size: 18px;
+    color: #484848;
+  }
+  
+  .footerpara {
+    margin: 0;
+    padding: 0 0 10px;
+    font-size: calc(var(--font-size-base) - 1px);
+  }
+  
+  .cart-modal__btn {
+    display: block;
+    width: calc(50% - 5px);
+    margin: 10px 0 0;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #1cc95d;
+    border: 2px solid var(--primary);
+    font-family: var(--font-heading-family);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 0;
+    border-color: #fff;
+  }
+  
+  .cart-modal__btn--viewcart {
+    color: #484848;
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 0;
+  }
+  
+   :hover.cart-modal__btn--viewcart {
+    border: solid 3px #ccc;
+    transition: 0.30s;
+    border-width: 3px;
+  }
+  
+  .cart-modal__btn--checkout {
+    color: #fff;
+    background-color: #1cc95d;
+    border: 2px solid transparent; /* Transparent border by default */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+  }
+
+  
+  /* Hover state */
+  .cart-modal__btn--checkout:hover {
+    background-color: transparent; /* Change background to transparent on hover */
+    color: #1cc95d; /* Change text color to green on hover */
+    border: solid 1px #1cc95d;
+  }
+  
+  i {
+    color: #1cc95d;
+  }
+  
